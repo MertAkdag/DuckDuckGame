@@ -13,10 +13,6 @@ public class MicroInput : MonoBehaviour
 
     public float jumpForce;
 
-    public Transform groundCheck;
-    public LayerMask whatIsGround;
-
-    public bool isGrounded;
     public bool right = true;
     AudioSource _audio;
 
@@ -28,7 +24,7 @@ public class MicroInput : MonoBehaviour
         _audio = GetComponent<AudioSource>();
         _audio.clip = Microphone.Start(null, true, 10, 44100);
         _audio.loop = true;
-        // _audio.mute = true;
+       // _audio.mute = true;
 
         while (!(Microphone.GetPosition(null) > 0))
         {
@@ -42,7 +38,8 @@ public class MicroInput : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 180, 0);
 
         }
-        if (right == true){
+        if (right == true)
+        {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 
@@ -52,7 +49,7 @@ public class MicroInput : MonoBehaviour
     {
         loudness = GetAverageVolume() * sensitivity;
         //  Debug.Log(loudness);
-        if (loudness > jumpLoudnessThreshold && isGrounded || Input.GetKeyDown(KeyCode.Space))
+        if (loudness > jumpLoudnessThreshold || Input.GetKeyDown(KeyCode.Space))
         {
             if (right == true)
             {
@@ -68,15 +65,7 @@ public class MicroInput : MonoBehaviour
             }
         }
 
-        if (!isGrounded)
-            Debug.Log("____ is in the Air!");
     }
-    void FixedUpdate()
-    {
-        isGrounded = Physics.CheckSphere(groundCheck.position, 0.1f, whatIsGround);
-
-    }
-
     float GetAverageVolume()
     {
 
@@ -90,13 +79,14 @@ public class MicroInput : MonoBehaviour
         }
 
         return (a / 256f);
+
     }
 
     public void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Right")
         {
-                    print("amınakoyim bu ne ya");
+            print("amınakoyim bu ne ya");
 
             right = false;
             transform.localRotation = Quaternion.Euler(0, 180, 0);
@@ -107,5 +97,5 @@ public class MicroInput : MonoBehaviour
             right = true;
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-    }
+    }	
 }
