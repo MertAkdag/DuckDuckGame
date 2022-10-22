@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6857565036378464415}
   - component: {fileID: 5904335773456061452}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3413656640116146039}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6857565036378464415
 BoxCollider:
@@ -110,8 +110,8 @@ GameObject:
   - component: {fileID: 2763706767885814835}
   - component: {fileID: 2773693573695897507}
   m_Layer: 0
-  m_Name: LPN_Details.001 (2)
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,11 +124,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2750600403731917291}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3965, y: 0.532, z: 0.136}
-  m_LocalScale: {x: 0.33333334, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.3965, y: 0.53199995, z: 0.136}
+  m_LocalScale: {x: 0.33333334, y: 0.49999997, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3413656640116146039}
+  m_Father: {fileID: 9103090036273536256}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2763706767885814835
@@ -209,14 +209,9 @@ Transform:
   m_LocalScale: {x: 4, y: 1.2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8264218062013512658}
-  - {fileID: 5293503863771046991}
-  - {fileID: 2747653178551661027}
-  - {fileID: 4600744862768241923}
   - {fileID: 6305164047174720272}
-  - {fileID: 7618694944059625303}
+  - {fileID: 9103090036273536256}
   - {fileID: 5961865846339519141}
-  - {fileID: 5649203093597683817}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -232,8 +227,8 @@ GameObject:
   - component: {fileID: 4585273241222193363}
   - component: {fileID: 4577524800861705027}
   m_Layer: 0
-  m_Name: LPN_Details.001 (3)
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,11 +241,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4599469825120978187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.152, y: 0.532, z: 0.286}
-  m_LocalScale: {x: 0.33333334, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.152, y: 0.53199995, z: 0.286}
+  m_LocalScale: {x: 0.33333334, y: 0.49999997, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3413656640116146039}
+  m_Father: {fileID: 9103090036273536256}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4585273241222193363
@@ -315,8 +310,8 @@ GameObject:
   - component: {fileID: 5263939527967054239}
   - component: {fileID: 5271971518050281999}
   m_Layer: 0
-  m_Name: LPN_Details.001 (1)
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -329,11 +324,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5295096042349198407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.108, y: 0.532, z: 0.411}
-  m_LocalScale: {x: 0.33333334, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.108, y: 0.53199995, z: 0.411}
+  m_LocalScale: {x: 0.33333334, y: 0.49999997, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3413656640116146039}
+  m_Father: {fileID: 9103090036273536256}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5263939527967054239
@@ -398,8 +393,8 @@ GameObject:
   - component: {fileID: 5628664880493263317}
   - component: {fileID: 5636681365902647353}
   m_Layer: 0
-  m_Name: LPN_Details.005
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,12 +407,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5650812692619844949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0368, y: 0.51810676, z: 0.03}
-  m_LocalScale: {x: 0.3657, y: 0.2750833, z: 0.5}
+  m_LocalPosition: {x: -0.0368, y: 0.5181067, z: 0.03}
+  m_LocalScale: {x: 0.3657, y: 0.27508327, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3413656640116146039}
-  m_RootOrder: 7
+  m_Father: {fileID: 9103090036273536256}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5628664880493263317
 MeshFilter:
@@ -469,6 +464,43 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5935513895725457708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9103090036273536256}
+  m_Layer: 9
+  m_Name: Grass
+  m_TagString: Platform
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9103090036273536256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5935513895725457708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8264218062013512658}
+  - {fileID: 5293503863771046991}
+  - {fileID: 2747653178551661027}
+  - {fileID: 4600744862768241923}
+  - {fileID: 7618694944059625303}
+  - {fileID: 5649203093597683817}
+  m_Father: {fileID: 3413656640116146039}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6308919887509942892
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,8 +513,8 @@ GameObject:
   - component: {fileID: 6339794913383871996}
   - component: {fileID: 6332046597102164912}
   m_Layer: 0
-  m_Name: LPN_Trees.015
-  m_TagString: Untagged
+  m_Name: Tree
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -500,7 +532,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3413656640116146039}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6339794913383871996
 MeshFilter:
@@ -564,8 +596,8 @@ GameObject:
   - component: {fileID: 7620092786627068029}
   - component: {fileID: 7630374513208469837}
   m_Layer: 0
-  m_Name: LPN_Rocks.024
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,12 +610,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7617472439712148721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2931, y: 0.5, z: 0.324}
+  m_LocalPosition: {x: 0.2931, y: 0.49999997, z: 0.324}
   m_LocalScale: {x: 0.120972045, y: 0.36291614, z: 0.30587116}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3413656640116146039}
-  m_RootOrder: 5
+  m_Father: {fileID: 9103090036273536256}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7620092786627068029
 MeshFilter:
@@ -647,8 +679,8 @@ GameObject:
   - component: {fileID: 8271826228978681346}
   - component: {fileID: 8282090116953453970}
   m_Layer: 0
-  m_Name: LPN_Details.001
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -661,11 +693,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8268009642728711130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3310115, y: 0.532, z: 0.18328877}
-  m_LocalScale: {x: 0.33333334, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.3388, y: 0.5519999, z: 0.18328877}
+  m_LocalScale: {x: 0.42997333, y: 0.49999997, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3413656640116146039}
+  m_Father: {fileID: 9103090036273536256}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8271826228978681346

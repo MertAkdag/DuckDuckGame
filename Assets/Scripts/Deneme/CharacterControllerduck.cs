@@ -22,31 +22,16 @@ public class CharacterControllerduck : MonoBehaviour
     public float jumpLoudnessThreshold;
     public float runLoudnessThreshold;
     public float jumpForce;
+    private float Timer = 3f;
+    AudioSource audioManager;
 
 
     Rigidbody rigidbody;
+    public AudioSource audioData;
 
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        /*
-        int randomleftrigt = Random.Range(1, 3);
-        if (randomleftrigt == 1)
-        {
-
-            rigidbody.AddForce(Vector3.right * 150f);
-            print("sağa gitti amına");
-
-        }
-        if (randomleftrigt == 2)
-        {
-            rigidbody.AddForce(Vector3.left * 150f);
-            print("sola gitti amına");
-
-        }
-        print(randomleftrigt);
-        */
-
 
         if (right == false)
         {
@@ -57,12 +42,12 @@ public class CharacterControllerduck : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Timer -= Time.deltaTime;
+
         float loudness = detector.GetLoudnessFromMicrophone() * loudnessSens;
 
         if (loudness < threshold)
@@ -84,8 +69,6 @@ public class CharacterControllerduck : MonoBehaviour
             }
 
         }
-
-        //rigidbody.AddForce(Vector3.up * loudness);
     }
 
     void OnCollisionEnter(Collision other)
@@ -93,16 +76,23 @@ public class CharacterControllerduck : MonoBehaviour
         if (other.gameObject.tag == "Right")
         {
             print("amınakoyim bu ne ya");
-
+            audioData.Play();
             right = false;
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
 
         if (other.gameObject.tag == "Left")
         {
+            audioData.Play();
             right = true;
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
+        if (other.gameObject.tag == "Platform")
+        {
+            audioData.Play();
+
+        }
+
     }
 
 
