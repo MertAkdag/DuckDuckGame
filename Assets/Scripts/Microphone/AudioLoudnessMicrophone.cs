@@ -11,12 +11,6 @@ public class AudioLoudnessMicrophone : MonoBehaviour
     {
         MicrophoneToAudioClip();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void MicrophoneToAudioClip()
     {
         string microphoneName = Microphone.devices[0];

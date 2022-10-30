@@ -6,19 +6,6 @@ using UnityEngine;
 public class AudioLoudnessDetection : MonoBehaviour
 {
     public int SampleWindows = 64;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public float GetLoudnessFromAudioClip(int clipPosition, AudioClip clip){
         int startPosition = clipPosition - SampleWindows;
 

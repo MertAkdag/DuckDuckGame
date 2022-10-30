@@ -1,15 +1,25 @@
 using UnityEngine;
 using Cinemachine;
- 
+
 /// <summary>
 /// An add-on module for Cinemachine Virtual Camera that locks the camera's Z co-ordinate
 /// </summary>
-[ExecuteInEditMode] [SaveDuringPlay] [AddComponentMenu("")] // Hide in menu
+[ExecuteInEditMode]
+[SaveDuringPlay]
+[AddComponentMenu("")] // Hide in menu
 public class CameraController : CinemachineExtension
 {
+    private void Start()
+    {
+        if(true){
+        Screen.SetResolution(1080, 1920, true);
+        print("1");
+
+        }
+    }
     [Tooltip("Lock the camera's Z position to this value")]
     public float m_XPosition = 10;
- 
+
     protected override void PostPipelineStageCallback(
         CinemachineVirtualCameraBase vcam,
         CinemachineCore.Stage stage, ref CameraState state, float deltaTime)

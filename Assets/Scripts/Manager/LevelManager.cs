@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-
     public Transform player;
 
     [Header("Walls")]
