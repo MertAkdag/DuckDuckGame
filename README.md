@@ -15,9 +15,6 @@
 [UNITY INSTALL!](https://unity3d.com/get-unity/download/archive)
 #
 
-# GIT
-[GIT INSTALL!](https://git-scm.com/downloads)
-
 #
 #
 #
