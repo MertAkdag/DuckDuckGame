@@ -30,8 +30,8 @@ public class LevelManager : MonoBehaviour
 
     void FixedUpdate()
     {
+ 
 
-    
     }
 
     private void Update()
@@ -62,7 +62,7 @@ public class LevelManager : MonoBehaviour
     {
         for (int i = 0; i < initBlocksLine; i++)
         {
-            Vector2 pos = new Vector2(Random.Range(-5, 5), currentBlockY);
+            Vector2 pos = new Vector2(Random.Range(-4, 5), currentBlockY);
             GameObject go = Instantiate(blockPrefab, pos, Quaternion.identity, transform);
             blocksPool.Add(go);
             currentBlockY += distanceBetweenBlocks;
@@ -87,5 +87,39 @@ public class LevelManager : MonoBehaviour
         blocksPool.RemoveAt(0);
         blocksPool.Add(temp);
     }
-
+    
+    //game over function
+    public void GameOver()
+    {
+        //stop the game
+        Time.timeScale = 0;
+        //show the game over panel
+        GameObject.Find("Canvas").transform.Find("GameOverPanel").gameObject.SetActive(true);
+    }
+    
+    //restart the game
+    public void Restart()
+    {
+        //reset the time scale
+        Time.timeScale = 1;
+        //load the current scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+    }
+    
+    //quit the game
+    public void Quit()
+    {
+        //quit the game
+        Application.Quit();
+    }
+    
+    //dies if the player falls from a certain height (y)
+    public void DieIfFallen()
+    {
+        if (player.position.y < -10)
+        {
+         //   Instantiate(player.position.y > -20 ressource, player.position, Quaternion.identity);
+        }
+    }
+    
 }
