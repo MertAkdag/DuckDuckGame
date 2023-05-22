@@ -42,5 +42,10 @@ ENJOY, now you have an open unity and project files 🥳
 
 [Background](https://caniaeast.itch.io/simple-sky-pixel-backgrounds)
 
+keystore pass: marasli123AK
+
+asset klasörünün içinde keystore.
+
+
 
 
